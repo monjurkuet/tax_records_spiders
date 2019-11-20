@@ -1,0 +1,22 @@
+def is_company(name):
+    known_company_names = ['assoc.',
+                           'association',
+                           'bros.',
+                           'brothers',
+                           'cie.',
+                           'compagnie',
+                           'co.',
+                           'company',
+                           'corp.',
+                           'corporation',
+                           'inc.',
+                           'incorporated',
+                           'ltd.',
+                           'limited',
+                           'mfg.',
+                           'manufacturing',
+                           'mfrs.',
+                           'manufacturers',
+                           'llc',
+                           'trust']
+    return any(substring in name.lower() for substring in known_company_names)

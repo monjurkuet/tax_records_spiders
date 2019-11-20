@@ -1,0 +1,11 @@
+X-Crawlera-Slave: 198.55.109.110:8800
+X-Crawlera-Version: 1.38.2-08d6ce
+Cache-Control: private
+Date: Thu, 14 Nov 2019 02:15:55 GMT
+Location: /itax/default.aspx
+Server: Microsoft-IIS/8.5
+Content-Type: text/html; charset=utf-8
+Tst: test/plain
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: ASP.NET_SessionId=lf4c35w3ndcnvjmldwqplqog; path=/; HttpOnly; Secure
+Set-Cookie: BNES_ASP.NET_SessionId=RM6n+bWXMXLwV5XTkcIHq+M0uX5bHEV6tMGep7wEzCnoF7kmmPXrIja5/SjS1vdlDNVUTzdscOI38aRat7ZVNboHtZ6Jsw7pBTY6zzYxpjSeTN1LllKhBw==; path=/; HttpOnly; Secure

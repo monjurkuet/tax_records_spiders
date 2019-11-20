@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"><title>
+	Tyler Technologies - iTax
+</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css?parameter=1" />-->
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <style type="text/css">
+        .style1
+        {
+            height: 130px;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/favicon.ico" /><link href="App_Themes/Default/site.css" type="text/css" rel="stylesheet" /></head>
+<body style="background-color: #484848;">
+    <form name="aspnetForm" method="post" action="./detail.aspx?taxid=80516731" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="94C4E88F" />
+        <div align="center">
+            <table border="0" width="780" cellspacing="0" cellpadding="0" id="table1" class="TopLevel">
+                <tr>
+                    <td valign="top" align="center" bgcolor="#ECEFF2" class="style1">
+                        <img src="images/wt_head.gif" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" bgcolor="#ECEFF2">
+                        <div id="_ctl0_divCart" align="left" class="banner">
+                            <span id="_ctl0_ctlCart_lblStatus">Shopping Cart: 0 items [$0.00]</span>
+<a id="_ctl0_ctlCart_HyperLink1" href="cart.aspx"><img src="images/cart.gif" alt="view cart" border="0" /></a>
+
+                        </div>
+                        
+                        <div align="left" class="content">
+                            
+    <table cellspacing="0" cellpadding="0" width="738" border="0">
+        <tr>
+            <td>
+                <a id="_ctl0_ContentPlaceHolder1_linkNewSearch" href="default.aspx"><img src="images/new_search.gif" alt="" border="0" /></a>&nbsp;&nbsp;
+                <a id="_ctl0_ContentPlaceHolder1_linkHistory" href="history.aspx"><img src="images/history.gif" alt="" border="0" /></a>&nbsp;&nbsp;
+                <a id="_ctl0_ContentPlaceHolder1_linkPayoff" href="PayoffCalendar.aspx"><img src="images/payoff.gif" alt="" border="0" /></a>
+                &nbsp;
+                <a id="_ctl0_ContentPlaceHolder1_linkPayTaxes" href="payoff.aspx"><img src="images/paytaxes.gif" alt="" border="0" /></a> 
+                &nbsp;
+                                           
+            </td>
+            <td align="right" valign="top">
+                <a id="_ctl0_ContentPlaceHolder1_linkHelp" href="help.aspx" target="_blank"><img src="images/help_btn.gif" alt="" border="0" /></a></td>
+        </tr>
+    </table>
+    <br>
+    <span id="_ctl0_ContentPlaceHolder1_lblDisabledPaymentsMessage" style="color:Red;font-weight:bold;"></span>
+    <br>
+    <table id="Table1" cellspacing="0" cellpadding="0" width="738" border="0">
+        <tr>
+            <td valign="top" colspan="2">
+                <div id="_ctl0_ContentPlaceHolder1_Panel1" class="DataBox">
+	
+                    <table id="Table2" cellspacing="0" cellpadding="0" width="712" border="0">
+                        <tr>
+                            <td valign="top">
+                                <span id="_ctl0_ContentPlaceHolder1_Label10" style="font-weight:bold;">Taxpayer ID:</span>&nbsp;
+                                <span id="_ctl0_ContentPlaceHolder1_lblTaxID">80516731</span><br>
+                                <br>
+                                <span id="_ctl0_ContentPlaceHolder1_Label11" style="font-weight:bold;">Status:</span>&nbsp;
+                                <span id="_ctl0_ContentPlaceHolder1_lblStatus">Current</span><br>
+                                <br>
+                                <span id="_ctl0_ContentPlaceHolder1_Label12" style="font-weight:bold;">Receipt:</span>&nbsp;
+                                <span id="_ctl0_ContentPlaceHolder1_lblReceipt">5212</span><br>
+                                <br>
+                                <span id="_ctl0_ContentPlaceHolder1_Label13" style="font-weight:bold;">2019 Owner(s):</span><br>
+                                <span id="_ctl0_ContentPlaceHolder1_lblOwners">CROWLEY FLECK PLLP<br>SMITH MARIE<br>CROWLEY FLECK PLLP<br></span></td>
+                            <td width="20">
+                            </td>
+                            <td valign="top">
+                                <span id="_ctl0_ContentPlaceHolder1_Label14" style="font-weight:bold;">Mailing Address:</span><br>
+                                <span id="_ctl0_ContentPlaceHolder1_lblMailing">PO BOX 2529<br>
+BILLINGS, MT 591032529</span><br>
+                                <br>
+                                <span id="_ctl0_ContentPlaceHolder1_lblLevyDistrict" style="font-weight:bold;">Levy District:</span><br>
+                                <span id="_ctl0_ContentPlaceHolder1_lblLevy">1.1, DISTRICT 1.1</span>
+                            </td>
+                            <td valign="top">
+                                <br /><br />
+                                
+                            </td>
+                        </tr>
+                    </table>
+                
+</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 171px">
+                <br>
+                <table id="Table3" cellspacing="0" cellpadding="0" width="738" border="0">
+                    <tr>
+                        <td valign="top">
+                            <div id="_ctl0_ContentPlaceHolder1_Panel2" class="DataBox" style="height:130px;">
+	
+                                <div id="_ctl0_ContentPlaceHolder1_Panel6" class="DataHeader" DESIGNTIMEDRAGDROP="980" style="height:25px;">
+		
+                                    <span id="_ctl0_ContentPlaceHolder1_lblYearValue" DESIGNTIMEDRAGDROP="352" style="font-weight:bold;">2019 Value:</span>
+                                
+	</div>
+                                <br>
+                                <table id="Table4" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label1" style="font-weight:bold;">Market:</span></td>
+                                        <td width="14">
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblValueMarket">$64,320</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label2" style="font-weight:bold;">Taxable:</span></td>
+                                        <td width="14">
+                                            &nbsp;</td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblValueTaxable">$859</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td width="14">
+                                            &nbsp;
+                                        </td>                                        
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            </td>
+                                        <td width="14">
+                                            &nbsp;</td>
+                                        <td align="right">
+                                            </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            </td>
+                                        <td width="14">
+                                            &nbsp;</td>
+                                        <td align="right">
+                                            </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            </td>
+                                        <td width="14">
+                                            &nbsp;</td>
+                                        <td align="right">
+                                            </td>                                    
+                                    </tr>                                    
+                                </table>
+                            
+</div>
+                        </td>
+                        <td width="20">
+                        </td>
+                        <td valign="top">
+                            <div id="_ctl0_ContentPlaceHolder1_Panel3" class="DataBox" style="height:130px;">
+	
+                                <div id="_ctl0_ContentPlaceHolder1_Panel7" class="DataHeader" style="height:25px;">
+		
+                                    <span id="_ctl0_ContentPlaceHolder1_lblYearTaxes" style="font-weight:bold;">2019 Taxes:</span>
+                                    &nbsp;
+                                   
+                                    <a id="_ctl0_ContentPlaceHolder1_linkPieChart" href="pieChart.aspx" target="_blank" style="border-color:Black;position: relative; left: 5px; top: 1px"><img src="images/viewPieChart.gif" alt="" border="0" /></a>
+
+                                    
+	</div>
+           
+                                <br>
+                                <table id="Table5" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label3" style="font-weight:bold;">First Half:</span></td>
+                                        <td width="14">
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblTaxFirstHalf">$792.71</span></td>
+                                        <td style="text-align: right; width: 50px;">
+                                            <span id="_ctl0_ContentPlaceHolder1_Label18" style="font-weight:bold;">Due:&nbsp;</span></td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblFirstDueDate">7/1/2019</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label4" style="font-weight:bold;">Second Half:</span></td>
+                                        <td>
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblTaxSecondHalf">$0.00</span></td>
+                                        <td style="text-align: right; width: 50px;">
+                                            <span id="_ctl0_ContentPlaceHolder1_Label19" style="font-weight:bold;">Due:&nbsp;</span></td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblSecondDueDate">7/1/2019</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label5" style="font-weight:bold;">Total:</span></td>
+                                        <td>
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblTaxTotal">$792.71</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            </td>
+                                        <td>
+                                        </td>
+                                        <td align="right">
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                         <td align="right">
+                                                &nbsp;</td>
+                                    </tr>
+                                </table>
+                            
+</div>
+                        </td>
+                        <td width="20">
+                        </td>
+                        <td valign="top">
+                            <div id="_ctl0_ContentPlaceHolder1_Panel4" class="DataBox" style="height:130px;">
+	
+                                <div id="_ctl0_ContentPlaceHolder1_Panel8" class="DataHeader" style="height:25px;">
+		
+                                    <span id="_ctl0_ContentPlaceHolder1_lblYearPayments" style="font-weight:bold;">2019 Payments:</span>
+                                
+	</div>
+                                <br>
+                                <table id="Table6" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label8" style="font-weight:bold;">First Half:</span></td>
+                                        <td width="20">
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblPayFirstHalf">$792.71</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label7" style="font-weight:bold;">Second Half:</span></td>
+                                        <td width="20">
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblPaySecondHalf">$0.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            </td>
+                                        <td width="20">
+                                        </td>
+                                        <td align="right">
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="_ctl0_ContentPlaceHolder1_Label9" style="font-weight:bold;">Total:</span></td>
+                                        <td width="20">
+                                        </td>
+                                        <td align="right">
+                                            <span id="_ctl0_ContentPlaceHolder1_lblPayTotal">$792.71</span></td>
+                                    </tr>
+                                </table>
+                            
+</div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <a id="_ctl0_ContentPlaceHolder1_linkClassCodes" href="classcodes.aspx" style="position: relative; left: 36px; top: -30px"><img src="images/detail.gif" alt="" border="0" /></a>
+                <a id="_ctl0_ContentPlaceHolder1_linkKindOfTax" href="kindoftax.aspx" style="position: relative; left: 200px; top: -30px"><img src="images/detail.gif" alt="" border="0" /></a>    
+                <span id="_ctl0_ContentPlaceHolder1_Label20" style="font-size:X-Small;position: relative; left: 340px; top: -80px">(May include penalty & interest)</span>                        
+            </td>
+        </tr>
+        
+        
+        <tr>
+           <td>
+           </td>
+           <td>
+               <a id="_ctl0_ContentPlaceHolder1_linkTaxBill" href="PDF\2019\PP\80516731-5212.pdf" style="position: relative; left: 280px; top: -95px"><img src="images/taxbill2.gif" alt="" border="0" /></a>   
+           </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">
+                <div id="_ctl0_ContentPlaceHolder1_Panel5" class="DataBox">
+	
+                    <div id="_ctl0_ContentPlaceHolder1_Panel10" class="DataHeader">
+		
+                        <span id="_ctl0_ContentPlaceHolder1_Label16" style="font-weight:bold;">2019 Legal Records:</span>
+                    
+	</div>
+                    <br>
+                    
+                            <span id="_ctl0_ContentPlaceHolder1_rptLegal__ctl0_lblLegal"><b>Geo Code:</b>                         <br>
+<br>
+<b>Property address:</b> 305 S 4TH ST E, MISSOULA MT 59801</span><br>
+                        
+                
+</div>
+                <br/>
+                
+                <div id="_ctl0_ContentPlaceHolder1_divImages"></div>
+                <span id="_ctl0_ContentPlaceHolder1_lblDisclaimer"><b>Note:</b> The accuracy of this data is not guaranteed.
+  Property Tax data was last updated 11/13/2019 07:00 PM.</span></td>
+        </tr>
+    </table>
+
+                        </div>
+                        <div id="_ctl0_divContact" align="left" class="banner">
+                            <span id="_ctl0_lblContactInfo">If you are sending your payments in by mail, address them To:<br><br>
+
+Missoula County<br>
+200 W Broadway<br>
+Missoula, MT 59802<br><br>
+Include Taxpayer ID with payments.</span>
+                        </div>
+                        <div align="center">
+                            
+                            <a href="http://www.tylertech.com" target="_blank">
+                                <img src="images/TylerTechnologies.gif" border="0" alt="Powered By TYLER" />
+                            </a>
+                            <br /><br />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="black">
+                        <div align="center" class="footer">&nbsp;
+                            <span id="_ctl0_lblVersion">&#169;&nbsp;2019 Tyler Technologies, Inc. &nbsp;&nbsp;&nbsp; iTax Version 2019.3.0.0 </span></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <input type="hidden" name="__ncforminfo" value="S0K6TaYPGxr1jVHhb21F5VR-UguceIN7ROG5TkRohphIgJqK_Da4-7p2XNWot1GOUtZmZHDfw-fiPwRqvalwReivclZqrDDwyh0TzVfhBB_EPqGq_8tREQ=="/></form>
+    
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="scripts/JScript.js"></script>
+</body>
+</html>
